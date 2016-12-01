@@ -1,7 +1,7 @@
 var myImage;
 var myLine;
 var myRect;
-var currentMonth;
+//var currentMonth;
 
 function preload(){
     myImage = loadImage("images/flamingo.jpg");
@@ -38,21 +38,20 @@ function draw() {
     text(second(),width/4*3,height/2);//height/3*3
     
     //year month day
-    /* Why this doesn't work???????
-    if（month()==1)｛currentMonth="January"}
-    if（month()==2）｛currentMonth="February"}
-    if（month()==3）｛currentMonth="March"}
-    if（month()==4）｛currentMonth="April"}
-    if（month()==5）｛currentMonth="May"}
-    if（month()==6）｛currentMonth="June"}
-    if（month()==7）｛currentMonth="July"}
-    if（month()==8）｛currentMonth="August"};
-    if（month()==9）｛currentMonth="September"};
-    if（month()==10）｛currentMonth="October"};
-    if（month()==11）｛currentMonth="November"};
-    if（month()==12) {currentMonth="December"};
-    */
-    currentMonth="December"
+    var s=month();
+    if(s==1) currentMonth="January";
+    if(s==2) currentMonth = "February";
+    if(s==3) currentMonth = "March";
+    if(s==4) currentMonth = "April";
+    if(s==5) currentMonth = "May";
+    if(s==6) currentMonth = "June";
+    if(s==7) currentMonth = "July";
+    if(s==8) currentMonth = "August";
+    if(s==9) currentMonth = "September";
+    if(s==10) currentMonth ="October";
+    if(s==11) currentMonth = "November";
+    if(s==12) currentMonth = "December";
+    
     fill(255);
     textSize(width/30);
     textAlign(CENTER); 
